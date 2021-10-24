@@ -1,11 +1,11 @@
 * About
-This project functions as a template for new Python projects to be set up using Nix. By using Nix for your next Python project you will get:
+This project functions as a template for new Python projects to be set up using [[https://nixos.org][Nix]]. By using Nix for your next Python project you will get:
 1. Reproducable builds and development environments
 2. No need for a venv to isolate the project's python environment
 3. No need for pyenv or similar to manage your Python version: Nix allows for a *complete* project declaration that doesn't bloat your system
 4. Use Poetry to manage your dependencies, but build them from generated nix derivations created by poetry2nix
 * Requirements
-You will need nix installed with flakes. Additionally I recommend nix-direnv with flake support to have direnv set you up automatically with the latest version of your flake
+You will need [[https://nixos.org][Nix]] installed with [[https://nixos.wiki/wiki/Flakes][flakes enabled]]. Additionally I recommend [[https://github.com/nix-community/nix-direnv][nix-direnv]] (with flake support) to have direnv set you up automatically with the latest version of your flake. If not a fan of direnv: just execute ``nix develop`` in the project root to enter your project's environment
 * Usage
 #+begin_src shell
   $ git clone https://github.com/sebastiant/nix-python-template.git
