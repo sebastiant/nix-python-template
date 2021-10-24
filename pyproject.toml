@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "myapp"
+version = "0.1.0"
+description = "A template for Python projects using Nix"
+authors = ["Sebastian Tunstig <sebastian.tunstig@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+uvicorn = "^0.15.0"
+fastapi = "^0.70.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+myapp = "myapp.main:main"
