@@ -32,8 +32,6 @@
           devShell = pkgs.mkShell {
             buildInputs = with pkgs; [
               myappEnv
-              python39Packages.ipython
-              python39Packages.pytest
             ];
           };
         apps.myapp = pkgs.myapp;
