@@ -1,9 +1,14 @@
 {
   description = "Template flake for Python projects";
 
-  inputs.flake-utils.url = "github:numtide/flake-utils";
-  inputs.nixpkgs.url = "github:NixOS/nixpkgs";
-  inputs.poetry2nix.url = "github:nix-community/poetry2nix";
+  inputs = {
+    nixpkgs.url = github:nixos/nixpkgs/nixos-unstable;
+    flake-utils.url = github:numtide/flake-utils;
+    poetry2nix = {
+      url = github:nix-community/poetry2nix;
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+  };
 
   outputs = { self, nixpkgs, flake-utils, poetry2nix }:
     {
