@@ -15,5 +15,6 @@ You will need [[https://nixos.org][Nix]] installed with [[https://nixos.wiki/wik
   $ echo $SECRET # Environment variables from .env_vars conveniently accessible from shell as well as from your Python project
   $ myapp # your app is built and accessible
   $ ipython # so are development dependencies
+  $ testrunner # a sample script using watchexec to keep tests runing is included and right there in your PATH
   $ emacs & # Code away! Or even smoother: add direnv-support for your favourite editor so you can start it from anywhere
 #+end_src
